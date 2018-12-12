@@ -1,5 +1,5 @@
 FROM openjdk:8-alpine
-LABEL maintainer="Álvaro S. <alvaro@alvr.me>"
+LABEL maintainer="Goooseman <goooseman@me.com>"
 
 ENV SDK_TOOLS "4333796"
 ENV BUILD_TOOLS "22.0.1"
@@ -27,3 +27,9 @@ RUN mkdir -p /root/.android/ && touch /root/.android/repositories.cfg && \
 	yes | ${ANDROID_HOME}/tools/bin/sdkmanager "--licenses" && \
 	${ANDROID_HOME}/tools/bin/sdkmanager "--update" && \
 	${ANDROID_HOME}/tools/bin/sdkmanager "build-tools;${BUILD_TOOLS}" "platform-tools" "platforms;android-${TARGET_SDK}" "extras;android;m2repository" "extras;google;google_play_services" "extras;google;m2repository" "emulator"
+
+# Install ruby and npm
+RUN apk add --no-cache git nodejs nodejs-npm ruby ruby-rdoc ruby-dev ruby-irb g++ make
+
+# Install bundler and fastlane (even if you use different fastlane version, it is better to preinstall it to have all dependency gems ready)
+RUN gem install bundle fastlane

@@ -2,7 +2,7 @@
 
 | Pulls | Stars | Size |
 | ----- | ----- | ---- |
-| [![](https://img.shields.io/docker/pulls/alvrme/alpine-android.svg)](https://hub.docker.com/r/alvrme/alpine-android/) | [![](https://img.shields.io/docker/stars/alvrme/alpine-android.svg)](https://hub.docker.com/r/alvrme/alpine-android/) | [![](https://images.microbadger.com/badges/image/alvrme/alpine-android:android-28.svg)](https://microbadger.com/images/alvrme/alpine-android:android-28) |
+| [![](https://img.shields.io/docker/pulls/trucknet/android-react-native-ci-alpine.svg)](https://hub.docker.com/r/trucknet/android-react-native-ci-alpine/) | [![](https://img.shields.io/docker/stars/trucknet/android-react-native-ci-alpine.svg)](https://hub.docker.com/r/trucknet/android-react-native-ci-alpine/) | [![](https://images.microbadger.com/badges/image/trucknet/android-react-native-ci-alpine:android-28.svg)](https://microbadger.com/images/trucknet/android-react-native-ci-alpine:android-28) |
 
 ## Content
 Path                               | Version | Description                | Location
