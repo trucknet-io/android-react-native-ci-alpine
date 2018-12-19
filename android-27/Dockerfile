@@ -7,7 +7,8 @@ ENV TARGET_SDK "27"
 ENV ANDROID_HOME "/opt/sdk"
 ENV GLIBC_VERSION "2.28-r0"
 ENV NODE_VERSION "v10.14.2"
-ENV NODE_CONFIG_FLAGS "--fully-static --without-npm"
+ENV NPM_VERSION "6.4.1"
+ENV NODE_CONFIG_FLAGS "--fully-static"
 ENV NODE_DEL_PKGS="libstdc++"
 ENV NODE_RM_DIRS=/usr/include
 
